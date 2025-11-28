@@ -6,4 +6,12 @@
   --color-accent: #1d546c;
   --color-neutrallight: #f4f4f4;
   --color-neutraldark: #454545;
+
+  --font-sans: "Open Sans", sans-serif;
+  --font-display: "Poppins", sans-serif;
+
+  --text-h1: 48px / 1.2 var(--font-display) bold;
+  --text-h2: 32px / 1 var(--font-display) bold;
+  --text-body: 18px / 1.5 var(--font-sans) normal;
+  --text-caption: 12px / 1 var(--font-sans) light;
 }

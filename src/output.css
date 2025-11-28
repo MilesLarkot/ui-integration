@@ -3,17 +3,16 @@
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
-    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-sans: "Open Sans", sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-white: #fff;
+    --spacing: 0.25rem;
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-primary: #1a3d64;
-    --color-secondary: #0c2b4e;
     --color-neutrallight: #f4f4f4;
+    --font-display: "Poppins", sans-serif;
   }
 }
 @layer base {
@@ -174,11 +173,20 @@
   .w-full {
     width: 100%;
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .items-center {
     align-items: center;
   }
   .justify-between {
     justify-content: space-between;
+  }
+  .gap-2\.5 {
+    gap: calc(var(--spacing) * 2.5);
+  }
+  .gap-x-3\.5 {
+    column-gap: calc(var(--spacing) * 3.5);
   }
   .bg-neutrallight {
     background-color: var(--color-neutrallight);
@@ -186,12 +194,21 @@
   .bg-primary {
     background-color: var(--color-primary);
   }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .py-\[15px\] {
+    padding-block: 15px;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
   .text-neutrallight {
     color: var(--color-neutrallight);
+  }
+  .underline {
+    text-decoration-line: underline;
   }
 }
 @property --tw-font-weight {
