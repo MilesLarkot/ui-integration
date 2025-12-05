@@ -196,9 +196,6 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
-  .-z-10 {
-    z-index: calc(10 * -1);
-  }
   .m-auto {
     margin: auto;
   }
@@ -208,17 +205,35 @@
   .my-auto {
     margin-block: auto;
   }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
   .mt-\[46px\] {
     margin-top: 46px;
   }
   .mt-\[47px\] {
     margin-top: 47px;
   }
+  .mt-\[50px\] {
+    margin-top: 50px;
+  }
+  .mt-\[60px\] {
+    margin-top: 60px;
+  }
+  .mt-\[80px\] {
+    margin-top: 80px;
+  }
   .mt-\[91px\] {
     margin-top: 91px;
   }
+  .mt-\[100px\] {
+    margin-top: 100px;
+  }
   .mt-\[129px\] {
     margin-top: 129px;
+  }
+  .mt-\[200px\] {
+    margin-top: 200px;
   }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
@@ -413,9 +428,6 @@
   .text-center {
     text-align: center;
   }
-  .font-\[font-display\] {
-    font-family: font-display;
-  }
   .font-display {
     font-family: var(--font-display);
   }
@@ -457,6 +469,16 @@
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
+  .sm\:mt-0 {
+    @media (width >= 40rem) {
+      margin-top: calc(var(--spacing) * 0);
+    }
+  }
+  .sm\:mt-\[47px\] {
+    @media (width >= 40rem) {
+      margin-top: 47px;
+    }
+  }
   .sm\:block {
     @media (width >= 40rem) {
       display: block;
@@ -470,6 +492,16 @@
   .sm\:hidden {
     @media (width >= 40rem) {
       display: none;
+    }
+  }
+  .md\:mt-0 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:mt-0 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 0);
     }
   }
   .lg\:flex-row {
@@ -507,6 +539,14 @@
   line-height: 1;
   font-family: var(--font-sans);
   font-weight: 300;
+}
+.hero-home {
+  background-image: url("assets/heroimg.png");
+  background-size: cover;
+  position: absolute;
+  height: 365px;
+  width: 100%;
+  z-index: -10;
 }
 @property --tw-border-style {
   syntax: "*";
