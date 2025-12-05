@@ -9,9 +9,40 @@
 
   --font-sans: "Open Sans", sans-serif;
   --font-display: "Poppins", sans-serif;
+}
 
-  --text-h1: 48px / 1.2 var(--font-display) bold;
-  --text-h2: 32px / 1 var(--font-display) bold;
-  --text-body: 18px / 1.5 var(--font-sans) normal;
-  --text-caption: 12px / 1 var(--font-sans) light;
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.text-h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  font-family: var(--font-display);
+  font-weight: bold;
+}
+
+.text-h2 {
+  font-size: 32px;
+  line-height: 1;
+  font-family: var(--font-display);
+  font-weight: bold;
+}
+
+.text-body {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: var(--font-sans);
+  font-weight: normal;
+}
+
+.text-caption {
+  font-size: 12px;
+  line-height: 1;
+  font-family: var(--font-sans);
+  font-weight: 300;
 }
